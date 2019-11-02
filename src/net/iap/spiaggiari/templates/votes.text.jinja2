@@ -1,0 +1,7 @@
+Voti:
+{%- for date, votes in data %}
+{{ date }}:
+{%- for vote in votes  %}
+    {{ vote.topic }}\t{{ vote.kind }}\t{{ vote.vote }}
+{%- endfor %}
+{%- endfor %}

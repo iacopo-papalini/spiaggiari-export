@@ -1,0 +1,702 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <link rel="stylesheet" href="../../css/tic_default.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../../commons/css/infoschool.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../../commons/css/thickbox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../../commons/lib/jsx/jQuery/ui/css/is/jquery-ui-1.8.10.custom.css" type="text/css" >
+
+
+
+
+    <script src="../../../commons/lib/jsx/dbg/xdbg-a.js" type="text/javascript"></script>
+    <script src="../../../commons/lib/jsx/dbg/xdbg-b.js?v004" type="text/javascript"></script>
+
+    <script src="../../../commons/lib/jsx/jQuery/jquery.js" type="text/javascript"></script>
+    <script src="../../../commons/lib/jsx/jQuery/thickbox.js" type="text/javascript"></script>
+    <script src="../../../commons/lib/jsx/jQuery/ui/jquery-ui-1.8.10.custom.min.js" type="text/javascript"></script>
+    <script src="../../../commons/lib/jsx/jQuery/jquery.timers-1.1.2.js" type="text/javascript"></script>
+    <script src="../../lib/js/session-ck-alive.js?rev=011" type="text/javascript" ></script>
+    <script src="../../../commons/lib/jsx/suggerimenti.js" type="text/javascript"></script>
+    <script src="../../../commons/lib/jsx/bar.username.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('.intestazioni').each(function(){
+                if($(this).find('.cella_data').height()<=20){
+                    $(this).find('.cella_data').css('height','40px');
+                    $(this).find('.cella_data').css('line-height','40px');
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <!-- FB Pixel Code (fb:ROSSO)-->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '232154580655455');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=232154580655455&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End FB Pixel Code -->
+</head>
+
+
+
+<body>
+
+
+
+<div class="barra-alta 
+bg_color_ff0000
+
+
+"></div><div class="barra-alta bordo_scuro bg_color_666666"></div><div class="barra-alta bordo_chiaro bg_color_bbbbbb"></div><div class="page-container">
+    <!-- common.tpl / tabled_begin -->
+    <div class="tabled_layout open_sans" id="tabled_geg_div_1" >
+        <table id="data_table" class="griglia_tab" width="1005" tabspacing="0"  border="0" cellspacing="0">
+            <!-- place-holder -->
+            <tr class="
+bg_color_ff0000
+
+
+" id="placeholder_row" valign="middle" align="center" height="1">
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+                <td width="20"></td><td width="20"></td><td width="20"></td><td width="20"></td>
+            </tr>
+
+            <!-- page-header-begin -->
+            <tr class="page-header
+bg_color_ff0000
+
+
+">
+                <td colspan="11" class="page-header-logo">
+                    <a href="
+../../../home/app/default/menu_scuolattiva.php
+
+" class="noprint" title="torna al menu principale">
+                        <img class="logo-img" src="
+../../../img/scuolattiva_neg.png
+
+" border="0" alt="torna al menu principale">
+                    </a>
+                </td>
+
+                <td colspan="26" class="page-header-modulename">
+                    &nbsp;
+                    <span class="handwriting font_size_17">
+
+Registro di classe
+
+
+</span>
+                </td>
+
+
+                <td colspan="2" class="page-header-sololink">
+                    <a id="faq_link" href="/acc/app/default/documentazione.php?prodotto=cvv&ref=1" title="Assistenza">
+                        <img src="../../../img/20/assistenza1.png" height="20" border="0" alt="Assistenza" />
+                    </a>
+                </td>
+                <td colspan="5" class="page-header-link" style="text-align: right;">
+                    <a href="/sso/app/default/me.php" >
+                        <div class="page-header-link-username" title="Il tuo codice personale" style="float:left;width:70px;overflow: hidden;padding-top:6px; ">
+                            <div class="usrname font_size_11 open_sans_condensed_bold"></div>
+
+                        </div>
+                        <div style="float:left;width:25px;" title="Profilo Personale & School Social Network">
+                            <img class="impostazioni" src="../../../img/omino.png" height="24" border="0" alt="Profilo" />
+                        </div>
+                    </a>
+                </td>
+
+                <td colspan="4" class="page-header-link esci">
+                    <a href="../../../home/app/default/logout.php">Esci</a>
+                </td>
+            </tr>
+
+            <tr class="bg_color_666666" style="height:1px;" >
+                <td colspan="48"></td>
+            </tr>
+            <tr class="bg_color_bbbbbb" style="height:1px;" >
+                <td colspan="48"></td>
+            </tr>
+            <tr class="page-usr" >
+                <td colspan="48" class="page-usr-user griglia_gray_bottom">
+                    <span class="scuola">CALVINO</span>&nbsp;
+                    <span class="luogo"></span>&nbsp;&nbsp;
+                    <span class="name">CATERINA PAPALINI</span>
+                </td>
+            </tr>
+            <!-- page-header-end -->
+
+
+            <tr class="griglia noprint" valign="middle" align="center" height="76">
+
+                <td colspan="28" class="page_head_icon">
+                    &nbsp;
+                </td>
+                <td colspan="4" class="page_head_icon">
+                    <a title="indietro" href="../../../home/app/default/menu_webinfoschool.php">
+                        <img src="../../../img/20/indietro.png" height="50" alt="lezioni">
+                    </a>
+                    <p class="graytext">Indietro</p>
+                </td>
+                <td colspan="4" class="page_head_icon">
+
+                </td>
+                <td colspan="4" class="page_head_icon " >&nbsp;
+
+                </td>
+                <td colspan="4" class="page_head_icon">
+                    <a href="genitori_voti.php?classe_id=887635&studente_id=6881841">
+                        <img src="../../../img/20/Voto_(generico).png" height="50" alt="voti">
+                    </a>
+                    <p class="graytext">Voti</p>
+                </td>
+
+                <td colspan="4" class="page_head_icon icon_selected">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data">
+                        <img src="../../../img/20/dettaglio_sms.png" height="50" alt="firma">
+                    </a>
+                    <p class="graytext">Dettaglio</p>
+                </td>
+
+
+            </tr>
+            <tr class="griglia" valign="middle" align="center" height="38">
+                <td colspan="15" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+
+                    <div style="text-align: left; padding-left:20px; width:100%;">
+                        <span class="page_title_fixed">Dettaglio voti di </span><br>
+                        <span class="page_title_variable" >PAPALINI CATERINA</span>
+                        </di>
+
+
+                </td>
+                <td colspan="5" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data&filtro=ultimi">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 95px; height: 40px; color: white; background-color: red; border-radius:25px; border: 1px solid red;">Ultimi 10 voti</button>
+                    </a>
+                </td>
+                <td colspan="5" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data&filtro=settimana">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 95px; height: 40px; color: grey; background-color: white; border-radius:25px; border: 1px solid red;">Ultima Settimana</button>
+                </td>
+                <td colspan="5" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data&filtro=mese">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 95px; height: 40px; color: grey; background-color: white; border-radius:25px; border: 1px solid red;">Ultimo Mese</button>
+                    </a>
+                </td>
+                <td colspan="5" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data&filtro=tutto">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 95px; height: 40px; color: grey; background-color: white; border-radius:25px; border: 1px solid red;">Tutto</button>
+                    </a>
+                </td>
+                <td colspan="1" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    &nbsp;
+                </td>
+                <td colspan="5" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <p class="graytext" style="font-weight: bold;">Ordina per:</p>
+                </td>
+                <td colspan="3" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=data&filtro=ultimi">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 65px; height: 40px; color: white; background-color: red; border-radius:25px; border: 1px solid red;">Data</button>
+                    </a>
+                </td>
+                <td colspan="4" class="align_middle" style="padding-bottom:20px;padding-top:20px;" align="center">
+                    <a href="genitori_note.php?classe_id=887635&studente_id=6881841&ordine=materia&filtro=ultimi">
+                        <button class="graytext" style="cursor: pointer; font-weight: bold; width: 75px; height: 40px; color: grey; background-color: white; border-radius:25px; border: 1px solid red;">Materia</button>
+                    </a>
+                </td>
+            </tr>
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Martedì 22/10/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">ITALIANO</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11">Orale</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q2" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            8
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Mercoledì 16/10/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">LINGUA INGLESE</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11">Orale</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q2" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            8½
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Giovedì 10/10/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">STORIA</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11">Orale</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q2" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            6½
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">LINGUA INGLESE</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11">Scritto/Grafico</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q1" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            9
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Venerdì 04/10/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">ARTE E IMMAGINE</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11">Orale</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q2" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_negativo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            4
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">SECONDA LINGUA COMUNITARIA</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Orale">
+                        <span class="voto_data cella_data font_size_11">Orale</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q2" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            8
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Giovedì 03/10/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">LINGUA INGLESE</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11">Scritto/Grafico</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q1" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_dettaglio" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            9
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Mercoledì 25/09/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">MATEMATICA</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11">Scritto/Grafico</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q1" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_negativo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            5+
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Venerdì 20/09/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">ARTE E IMMAGINE</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11">Scritto/Grafico</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q1" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_dettaglio" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            -
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+            <tr class="" valign="middle" align="center" height="38">
+                <td colspan="48" class="registro redtext open_sans_condensed_bold font_size_20" align="center" style="padding:20px;" >
+                    Mercoledì 18/09/2019
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="6" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11" style="font-weight: bold;">STORIA</span>
+                    </p>
+                </td>
+                <td colspan="5" class="griglia_sep_darkgray_top intestazioni" style="padding-top:5px; padding-bottom:5px;">
+                    <p title="Scritto/Grafico">
+                        <span class="voto_data cella_data font_size_11">Scritto/Grafico</span>
+                    </p>
+                </td>
+                <td colspan="2" class="griglia_sep_darkgray_top    voto_ visibile default q1" valign="top" style="padding-top:5px; padding-bottom:5px;">
+                    <div class=" cella_div cella_div f_reg_voto_positivo" valign="middle" style="position:relative; top:2px; border-radius:20px; border:0; margin:0; padding:0;" title="">
+                        <p align="center" class="s_reg_testo cella_trattino" style="height:40px; line-height:40px; border:0; margin:0; padding:0;font-weight:bold; font-size:22px;">
+                            7½
+                        </p>
+                    </div>
+                    <div style="position: relative; bottom:-1px; left:-1px; width:16px; height: 1px; background-color:#fff;"></div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top " style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+                <td colspan="32" class="griglia_sep_darkgray_top  handwriting graytext open_sans_condensed font_size_12" style="padding-top:5px; padding-bottom:5px;">
+                    <div valign="top" style="border:0; margin:0; padding:0;" title="" align="left">
+                        <span style="font-weight: bold"></span>
+                    </div>
+                </td>
+                <td colspan="1" valign="top" class="griglia_sep_darkgray_top" style="padding-top:5px; padding-bottom:5px;">
+                    &nbsp;
+                </td>
+            </tr>
+
+
+
+
+
+        </table>
+
+
+
+    </div><div style="height:80px;">&nbsp;</div>
+    <!-- Start Alexa Certify js -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct:"Pl+fk1acFH00EO", domain:"spaggiari.eu",dynamic: true};
+        (function(){var as=document.createElement('script');as.type='text/javascript';as.async=true;
+            as.src="https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+            var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as,s);})();
+    </script>
+    <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Pl+fk1acFH00EO" style="display:none" height="1" width="1" alt="" /></noscript>
+    <!-- End Alexa Certify js -->
+</body>
+
+
+
+</html>
+
+

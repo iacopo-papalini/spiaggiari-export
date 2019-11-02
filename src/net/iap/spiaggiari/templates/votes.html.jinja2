@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1>Voti</h1>
+<table>
+    <thead>
+    <tr>
+        <td>Data</td>
+        <td>Materia</td>
+        <td>Tipo</td>
+        <td>Voto</td>
+    </tr>
+    </thead>
+    <tbody>
+    {%- for date, votes in data %}
+        {%- for vote in votes %}
+            <tr>
+                <td>{{ date }}</td>
+                <td>{{ vote[0] }}</td>
+                <td>{{ vote[1] }}</td>
+                <td>{{ vote[2] }}</td>
+            </tr>
+        {%- endfor %}
+    {%- endfor %}
+    </tbody>
+</table>
+</body>
+</html>

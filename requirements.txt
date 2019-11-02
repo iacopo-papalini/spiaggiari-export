@@ -1,0 +1,5 @@
+pytest
+requests
+requests-html
+pyaml
+jinja2
