@@ -8,10 +8,9 @@ VOTES_URL = 'https://web.spaggiari.eu/cvv/app/default/genitori_note.php'
 
 
 class HTMLFetcher:
-    def __init__(self, username, password, student_id, ):
+    def __init__(self, username, password,  ):
         self.username = username
         self.password = password
-        self.student_id = student_id
         self._session_id = None
 
     def fetch(self):
@@ -20,7 +19,6 @@ class HTMLFetcher:
         cookies = {'PHPSESSID': session_id}
 
         params = (
-            ('studente_id', self.student_id),
             ('ordine', 'data'),
             ('filtro', 'ultimi')
         )
