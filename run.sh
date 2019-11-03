@@ -6,5 +6,5 @@ pyenv activate spiaggiari
 echo "$(date) Start"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "${DIR}" || exit
-python bin/fetch_votes.py "$@" 2>&1
+python "${DIR}/bin/fetch_votes.py" "$@" 2>&1
 echo "$(date) End"
