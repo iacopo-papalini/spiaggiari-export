@@ -1,0 +1,10 @@
+{{ document.title }}
+
+{{ document.text }}
+
+------
+
+Allegati:
+{%- for attachment in document.attachments %}
+ * {{ attachment.name }}
+{%- endfor %}

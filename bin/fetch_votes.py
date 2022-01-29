@@ -6,45 +6,52 @@ import sys
 
 import yaml
 
-sys.path.append(join(dirname(__file__), '..', 'src'))
+sys.path.append(join(dirname(__file__), "..", "src"))
 
 from net.iap.spiaggiari.fetcher import HTMLFetcher
-from net.iap.spiaggiari.parser import HTMLParser
+from net.iap.spiaggiari.vote_parser import HTMLVotesParser
 from net.iap.spiaggiari.sender import MailSender
 from net.iap.spiaggiari.filter import VotesFilter
 
-__author__ = 'Iacopo Papalini <iacopo.papalini@gmail.com>'
+__author__ = "Iacopo Papalini <iacopo.papalini@gmail.com>"
 
 
 def main(configuration):
-    fetcher = HTMLFetcher(**configuration['spiaggiari'])
-    html = fetcher.fetch()
+    fetcher = HTMLFetcher(**configuration["spiaggiari"])
+    html = fetcher.fetch_votes()
 
-    parser = HTMLParser(html)
+    parser = HTMLVotesParser(html)
     parsed = parser.parse()
     data = parsed.votes
 
-    if 'storage' in configuration:
-        json_file = configuration['storage']
+    if "storage" in configuration:
+        json_file = configuration["storage"]
         reply_filter = VotesFilter.from_json_file(json_file)
         data = reply_filter.filter(data)
         reply_filter.to_json_file(json_file)
 
-    if 'smtp' in configuration and data:
-        sender = MailSender(**configuration['smtp'])
+    if "smtp" in configuration and data:
+        sender = MailSender(**configuration["smtp"])
         sender.send(parsed)
     else:
         print(parsed.student)
         print(json.dumps(data, indent=2, sort_keys=True))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     args_parser = argparse.ArgumentParser(
         description='Recupera i voti dello studente dal sito "Scuola Attiva" di Spiaggiari'
-                    ' (https://web.spaggiari.eu)')
-    args_parser.add_argument('-c', '--configuration_file', help='File di configurazione (default ./conf.yml)',
-                             default='./conf.yml')
-    args_parser.add_argument('-v', '--verbose', action='store_true', help="Set verbose output on stderr")
+        " (https://web.spaggiari.eu)"
+    )
+    args_parser.add_argument(
+        "-c",
+        "--configuration_file",
+        help="File di configurazione (default ./conf.yml)",
+        default="./conf.yml",
+    )
+    args_parser.add_argument(
+        "-v", "--verbose", action="store_true", help="Set verbose output on stderr"
+    )
     args = args_parser.parse_args()
 
     logging.basicConfig()

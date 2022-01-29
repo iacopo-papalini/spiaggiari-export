@@ -1,13 +1,13 @@
 from collections import namedtuple
 
-__author__ = 'Iacopo Papalini <iacopo.papalini@gmail.com>'
+__author__ = "Iacopo Papalini <iacopo.papalini@gmail.com>"
 from requests_html import HTML
 
-Vote = namedtuple('Vote', 'Topic,Kind,Vote')
-VoteList = namedtuple("VoteList",'student,votes')
+Vote = namedtuple("Vote", "Topic,Kind,Vote")
+VoteList = namedtuple("VoteList", "student,votes")
 
 
-class HTMLParser:
+class HTMLVotesParser:
     def __init__(self, html):
         self.html = HTML(html=html)
         self.date = None
@@ -16,13 +16,12 @@ class HTMLParser:
         self.kind = None
 
     def next_td(self):
-        for tr in self.html.find('tr'):
-            for td in tr.find('td'):
-                classes = td.attrs.get('class', ())
+        for tr in self.html.find("tr"):
+            for td in tr.find("td"):
+                classes = td.attrs.get("class", ())
                 yield td, classes
 
-
-    def parse(self)->VoteList:
+    def parse(self) -> VoteList:
         student = ""
         dates = []
         for td, classes in self.next_td():
@@ -39,12 +38,12 @@ class HTMLParser:
         return VoteList(student=student, votes=dates)
 
     def _process_day(self, classes, text):
-        if 'intestazioni' in classes:
+        if "intestazioni" in classes:
             if not self.topic:
                 self.topic = text
             else:
                 self.kind = text
-        elif 'voto_' in classes:
+        elif "voto_" in classes:
             vote = Vote(self.topic, self.kind, text)
             self.topic = None
             self.date_votes.append(vote)
@@ -59,7 +58,7 @@ class HTMLParser:
         self.date_votes = []
 
     def _is_new_day(self, classes):
-        return 'registro' in classes
+        return "registro" in classes
 
     def _is_student(self, classes):
-        return 'page-usr-user' in classes
+        return "page-usr-user" in classes
