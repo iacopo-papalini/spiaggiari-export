@@ -21,7 +21,8 @@ def main(configuration):
     html = fetcher.fetch()
 
     parser = HTMLParser(html)
-    data = parser.parse()
+    parsed = parser.parse()
+    data = parsed.votes
 
     if 'storage' in configuration:
         json_file = configuration['storage']
@@ -31,8 +32,9 @@ def main(configuration):
 
     if 'smtp' in configuration and data:
         sender = MailSender(**configuration['smtp'])
-        sender.send(data)
+        sender.send(parsed)
     else:
+        print(parsed.student)
         print(json.dumps(data, indent=2, sort_keys=True))
 
 

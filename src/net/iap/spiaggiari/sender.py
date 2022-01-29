@@ -7,6 +7,8 @@ from jinja2 import Environment, FileSystemLoader
 __author__ = 'Iacopo Papalini <iacopo.papalini@gmail.com>'
 import smtplib
 
+from net.iap.spiaggiari.parser import VoteList
+
 
 class MailSender:
     def __init__(self, user, password, server, ssl_port, to, **_):
@@ -17,11 +19,12 @@ class MailSender:
         self.to = to
         self.templates_directory = join(dirname(__file__), 'templates')
 
-    def send(self, data):
+    def send(self, parsed:VoteList):
+        data = parsed.votes
         server = smtplib.SMTP_SSL(self.server, self.ssl_port)
         server.login(self.user, self.password)
         message = MIMEMultipart("alternative")
-        message["Subject"] = "Voti"
+        message["Subject"] = f"Voti {parsed.student}"
         message["From"] = self.user
         message["To"] = ','.join(self.to)
         environment = Environment(loader=FileSystemLoader(searchpath=self.templates_directory))

@@ -25,7 +25,12 @@ class HTMLFetcher:
         response = requests.get(VOTES_URL, params=params, cookies=cookies)
         if response.status_code != 200:
             raise RuntimeError("Cannot fetch votes: {}".format(response.status_code))
-        return response.text.encode('iso-8859-1').decode('utf-8')
+        text = response.text
+        try:
+            text = text.encode('iso-8859-1').decode('utf-8')
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
+        return text
 
     def _get_session_id(self):
         if not self._session_id:
