@@ -5,10 +5,11 @@ from os.path import dirname, join
 
 import yaml
 
+sys.path.append(join(dirname(__file__), "..", "src"))
+
 from net.iap.spiaggiari.doclist_parser import DoclistParser
 from net.iap.spiaggiari.filter import DocumentsFilter
 
-sys.path.append(join(dirname(__file__), "..", "src"))
 
 from net.iap.spiaggiari.fetcher import HTMLFetcher
 from net.iap.spiaggiari.sender import DocumentMailSender
