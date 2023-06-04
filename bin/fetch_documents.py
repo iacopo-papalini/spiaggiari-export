@@ -42,8 +42,8 @@ def main(configuration):
         print(f"{document.title}:")
         for attachment in document.attachments:
             print(f" * {attachment.name}")
-            if sender:
-                sender.send(document)
+        if sender:
+            sender.send(document)
 
 
 if __name__ == "__main__":
